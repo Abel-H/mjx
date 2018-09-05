@@ -655,7 +655,7 @@ return [
     ],
     'session' => [
         'name' => 'CONCRETE5',
-        'handler' => 'file',
+        'handler' => 'database',
         'save_path' => null,
         'max_lifetime' => 7200,
         'cookie' => [
@@ -825,9 +825,9 @@ return [
      */
     'security' => [
         'session' => [
-            'invalidate_on_user_agent_mismatch' => true,
+            'invalidate_on_user_agent_mismatch' => false,
 
-            'invalidate_on_ip_mismatch' => true,
+            'invalidate_on_ip_mismatch' => false,
         ],
         'ban' => [
             'ip' => [
